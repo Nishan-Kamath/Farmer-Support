@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmar support</title>
+    <link rel="stylesheet" href="{{ url_for('static' ,filename='css/style.css')}}">
+</head>
+<body>
+
+    <div class="querry-box">
+        <div class="box7">
+        <form method="post" action="/ans_querry">
+            <h2>Enter your querry</h2><br>
+            <input type="text" class="main-querry" name="querry"><br>
+            <input class="sub" type="submit">
+        </form>
+    </div>
+    <div class="ans">
+       <h1>{{ ques }}</h1> 
+       <h2>{{ ans }}</h2>
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="{{ url_for('static',filename='js/script.js') }}"></script>
+</body>
+</html>

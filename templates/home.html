@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Farm agent</title>
+        <link rel="stylesheet" href="{{ url_for('static' ,filename='css/style.css')}}">
+    </head>
+    <body>
+        <div class="crop-box">
+        <div class="box4">
+        <form method="post" action="/predict">
+            <label class="lbl">Enter temperature</label><br>
+            <input type="text" name="temperature" placeholder="temperature" value="35"><br><br>
+            <label class="lbl">Enter humidity</label><br>
+            <input type="text" name="humidity" placeholder="humidity" value="80"><br><br>
+            <label class="lbl">Enter ph</label><br>
+            <input type="text" name="ph" placeholder="ph" value="7"><br><br>
+            <label class="lbl">Enter rainfall</label><br>
+            <input type="text" name="rainfall" placeholder="rainfall" value="460"><br><br>
+            <input class="lbl-sub" type="submit" value="predict">
+        </form>
+        </div>
+        </div>
+
+        
+
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="{{ url_for('static',filename='js/script.js') }}"></script>
+    </body>
+</html>

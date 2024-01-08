@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm agent</title>
+    <link rel="stylesheet" href="{{ url_for('static' ,filename='css/style.css')}}">
+</head>
+<body>
+    <div class="we-box">
+        <div class="box8">
+            <img src="{{ url_for('static',filename='images/weather.jpg')}}">
+        <form method="post" action="get_whether">
+            <h2>Enter location</h2>
+            <input type="text" class="fld1" name="city" placeholder="city" value="Karkala"><br><br>
+            <input type="submit" class="fld2" value="get">
+        </form>
+    </div>
+    </div>
+</body>
+</html>

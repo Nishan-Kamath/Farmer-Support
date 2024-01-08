@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm agent</title>
+    <link rel="stylesheet" href="{{ url_for('static' ,filename='css/style.css')}}">
+
+</head>
+<body>
+    <div class="box">
+        <div class="box1">
+            <img src="{{ url_for('static',filename='/images/crop.jpg')}}">
+            <h2>crop yield prediction</h1>
+            <a href="/set_crop">go</a>
+        </div>
+        <div class="box2">
+            <img src="{{ url_for('static',filename='/images/weather.jpg')}}">
+            <h2>Check Whether</h2>
+            <a href="/set_whether">go</a>
+        </div>
+        <div class="box3">
+            <img src="{{ url_for('static',filename='/images/ask.jpg')}}">
+            <h2>Ask querries</h2>
+            <a href="/ask_querry">go</a>
+        </div>
+    </div>
+</body>
+</html>
