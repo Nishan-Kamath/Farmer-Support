@@ -1,64 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
 
-:root{
+:root {
     --main-color: #d3ad7f;
     --black: #13131a;
     --bg: #010103;
     --border: .1rem solid rgba(255,255,255,.3);
 }
-*{
-    font-family: 'Roboto',sans-serif;
+
+* {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline:none;
+    outline: none;
     border: none;
     text-decoration: none;
     text-transform: capitalize;
     transition: .2s linear;
-
 }
 
-html{
+html {
     width: 100%;
-    height:100%;
+    height: 100%;
     overflow-x: hidden;
     scroll-padding-top: 9rem;
     scroll-behavior: smooth;
 }
 
-html::-webkit-scrollbar{
+html::-webkit-scrollbar {
     width: .8rem;
 }
 
-html::-webkit-scrollbar-track{
+html::-webkit-scrollbar-track {
     background: transparent;
 }
 
-html::-webkit-scrollbar-thumb{
+html::-webkit-scrollbar-thumb {
     background: #fff;
     border-radius: 5rem;
 }
 
-.mt-50{
+.mt-50 {
     margin-top: 50px;
 }
 
-.mt-70{
+.mt-70 {
     margin-top: 170px;
 }
 
-.login-mt{
-    margin-top:80px;
+.login-mt {
+    margin-top: 80px;
 }
 
-.body-cls{
-    background: -webkit-linear-gradient(to right, #143300,#ff0084);
-    background: linear-gradient(to right, #222a22, #0f3801,#2c601a,#11550c);
+.body-cls {
+    background: -webkit-linear-gradient(to right, #143300, #ff0084);
+    background: linear-gradient(to right, #222a22, #0f3801, #2c601a, #11550c);
     background: linear-gradient(to border-top-right-radius, rgb(225, 218, 16));
 }
 
-.nav{
+.nav {
     border: 1px solid black;
     width: 100%;
     height: 50px;
@@ -68,8 +68,8 @@ html::-webkit-scrollbar-thumb{
     display: flex;
 }
 
-.nav a{
-    color : rgb(36, 4, 4);
+.nav a {
+    color: rgb(36, 4, 4);
     font-size: 25px;
     height: 40px;
     align-items: center;
@@ -81,7 +81,7 @@ html::-webkit-scrollbar-thumb{
     background-color: aliceblue;
 }
 
-.box{
+.box {
     background: url('../images/homepage.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 600px;
@@ -89,71 +89,56 @@ html::-webkit-scrollbar-thumb{
     justify-content: space-evenly;
 }
 
-.box .box1{
+.box .box1, .box .box2, .box .box3 {
     width: 300px;
     height: 300px;
     border: 2px solid white;
     text-align: center;
     align-items: center;
-    margin-top:auto;
+    margin-top: auto;
     margin-bottom: auto;
     backdrop-filter: blur(10px);
+    border-radius: 10px;
 }
 
-.box h2{
-    margin-top:15px;
+.box h2 {
+    margin-top: 15px;
     color: white;
+    margin-bottom: 15px;
 }
 
-.box a{
-    margin-top:25px;
+.box a {
     color: rgb(115, 4, 4);
     font-size: 24px;
     background-color: #7fbad3;
-    margin-top: 15px;
     border: 2px solid #310000;
     border-radius: 5px;
+    width: 50px;
+    height: 30px;
 }
 
-.box .box2{
-    width: 300px;
-    height: 300px;
-    border: 2px solid white;
-    text-align: center;
-    align-items: center;
-    margin-top:auto;
-    margin-bottom: auto;
-    backdrop-filter: blur(6px);
+.box a:hover {
+    transition: 1s;
+    transform: scaleX(1.1) scaleY(1.1);
 }
 
-.box img{
-    margin-top:20px;
+.box img {
+    margin-top: 20px;
     border-radius: 50%;
     width: 150px;
     height: 150px;
 }
 
-.box .box3{
-    width: 300px;
-    height: 300px;
-    border: 2px solid white;
-    text-align: center;
-    align-items: center;
-    margin-top:auto;
-    margin-bottom: auto;
-    backdrop-filter: blur(6px);
-}
-
-.crop-box{
-    background: url('../images/bg4.jpg') no-repeat center center fixed;
+.crop-box {
+    background: url('../images/veg.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: 600px;
+    height: 1200px;
     display: flex;
     justify-content: space-evenly;
 }
 
-.box4{
-    margin-top:50px;
+.box4 {
+    margin-top: 50px;
     backdrop-filter: blur(5px);
     height: 500px;
     width: 400px;
@@ -162,96 +147,98 @@ html::-webkit-scrollbar-thumb{
     text-align: center;
 }
 
-.box4 input{
-    width:300px;
+.box4 input {
+    width: 300px;
     height: 30px;
     background-color: #fff3e5;
     border: 1px solid black;
     border-radius: 4px;
     font-size: 17px;
-    font-weight:500;
+    font-weight: 500;
     text-align: center;
     color: #310000;
 }
 
-.box4 input:hover{
+.box4 input:hover {
     border: 4px solid blue;
 }
 
-.box4 .lbl{
-    margin-top:10px;
+.box4 .lbl {
+    margin-top: 10px;
     font-size: 22px;
     display: block;
     font-weight: 600;
     letter-spacing: 2px;
+    color: #fff;
 }
 
-.box4 .lbl-sub{
+.box4 .lbl-sub {
     width: 200px;
-    margin-top:10px;
+    margin-top: 10px;
     background-color: rgb(137, 200, 251);
     height: 32px;
-    width:100px;
-    font-size:20px;
+    width: 100px;
+    font-size: 20px;
     font-weight: 700;
     border: 2px solid rgb(62, 216, 247);
     border-radius: 5px;
 }
 
-.box4 .lbl-sub:hover{
+.box4 .lbl-sub:hover {
     border: 4px solid red;
 }
 
-.main-box{
+.main-box {
     background: url('../images/bg3.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: 600px;
+    height: 1200px;
     display: flex;
     justify-content: space-evenly;
 }
 
-.main-box .box6{
-    margin-top:100px;
+.main-box .box6 {
+    margin-top: 100px;
     width: 400px;
-    height: 400px;
+    height: 450px;
     backdrop-filter: blur(50px);
     border: 2px solid black;
     align-items: center;
     text-align: center;
+    border-radius: 10px;
 }
 
-.box6 .p-25{
-    margin-top:25px;
+.box6 .p-25 {
+    margin-top: 25px;
 }
 
-.box6 img{
-    width:150px;
+.box6 img {
+    width: 150px;
     height: 150px;
     border-radius: 50%;
     margin-top: 15px;
 }
 
-.box6 p{
+.box6 p {
     font-size: 20px;
     color: white;
     font-weight: 500;
     letter-spacing: 3px;
-    margin-top:10px;
+    margin-top: 10px;
 }
 
-.box6 h2{
+.box6 h2 {
     font-size: 25px;
     font-weight: 600;
     letter-spacing: 2px;
-    margin-top:15px;
-    color:rgb(255, 198, 198);
+    margin-top: 15px;
+    color: rgb(255, 198, 198);
 }
 
-.box6 h2 .cap{
+.box6 h2 .cap {
     text-transform: capitalize;
 }
 
-.querry-box{
+.querry-box {
     background: url('../images/qp.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 600px;
@@ -259,37 +246,38 @@ html::-webkit-scrollbar-thumb{
     justify-content: space-evenly;
 }
 
-.box7{
-    height: 200px;
-    width:400px;
+.box7 {
+    height: 400px;
+    width: 400px;
     backdrop-filter: blur(50px);
     background-color: #7fbad3;
-    color:rgb(36, 4, 4);
-    font-size:20px;
+    color: rgb(36, 4, 4);
+    font-size: 20px;
     font-weight: 500;
     align-items: center;
     text-align: center;
-    margin-top:50px;
+    margin-top: 50px;
     border: 2px solid black;
     border-radius: 5px;
 }
 
-.box7 h2{
-    margin-top:15px;
+.box7 h2 {
+    margin-top: 15px;
 }
-.box7 input{
+
+.box7 input {
     width: 380px;
     height: 30px;
     font-size: 18px;
     font-weight: 550;
-    color:rgb(36, 4, 4);
-    margin-top:3px;
+    color: rgb(36, 4, 4);
+    margin-top: 3px;
     border-radius: 5px;
-    color:#310000;
+    color: #310000;
     border: 2px solid #310000;
 }
 
-.box7 .sub{
+.box7 .sub {
     width: 200px;
     height: 28px;
     color: #310000;
@@ -297,42 +285,42 @@ html::-webkit-scrollbar-thumb{
     font-size: 20px;
     border: 2px solid #310000;
     border-radius: 4px;
-    margin-top:20px;
+    margin-top: 20px;
 }
 
-.box7 .sub:hover{
+.box7 .sub:hover {
     border: 4px solid blue;
 }
 
-.ans{
-    width:650px;
+.ans {
+    width: 650px;
     margin-top: auto;
     margin-bottom: auto;
 }
 
-.ans h1{
-    color:rgb(102, 0, 0);
+.ans h1 {
+    color: rgb(102, 0, 0);
     font-size: 25px;
     font-weight: 550;
 }
 
-.ans h2{
+.ans h2 {
     margin-top: 23px;
     font-size: 23px;
     font-weight: 560;
 }
 
-.we-box{
-    background: url('../images/bg4.jpg') no-repeat center center fixed;
+.we-box {
+    background: url('../images/blue_nature.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: 600px;
+    height: 1200px;
     display: flex;
     justify-content: space-evenly;
 }
 
-.box8{
-    width: 400px;
-    height: 400px;
+.box8 {
+    width: 500px;
+    height: 500px;
     backdrop-filter: blur(20px);
     margin-top: auto;
     margin-bottom: auto;
@@ -342,21 +330,21 @@ html::-webkit-scrollbar-thumb{
     border-radius: 5px;
 }
 
-.box8 img{
-    width:180px;
+.box8 img {
+    width: 180px;
     height: 180px;
     border-radius: 50%;
-    margin-top:20px;
+    margin-top: 20px;
 }
 
-.box8 h2{
+.box8 h2 {
     font-size: 18px;
     text-align: center;
     margin-top: 20px;
 }
 
-.box8 .fld1{
-    margin-top:20px;
+.box8 .fld1 {
+    margin-top: 20px;
     font-size: 18px;
     text-align: center;
     border: 2px solid #310000;
@@ -364,27 +352,36 @@ html::-webkit-scrollbar-thumb{
     height: 25px;
 }
 
-.box8 .fld2{
-    margin-top:20px;
-    font-size:18px;
+.box8 .fld2 {
+    margin-top: 20px;
+    font-size: 18px;
     width: 100px;
     height: 30px;
     background-color: #d170c4;
     border: 2px solid #310000;
     border-radius: 5px;
+    cursor: pointer;
 }
 
-.showwe-box{
-    background: url('../images/login.jpg') no-repeat center center fixed;
+.box8 .fld2:hover {
+    transform: scaleX(1.1) scaleY(1.1);
+    transition: 1.2s;
+    border: 3px solid #fff;
+}
+
+.showwe-box {
+    background: url('../images/lake.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: 600px;
+    background-clip: var(--main-color);
+    height: 1200px;
     display: flex;
     justify-content: space-evenly;
+    backdrop-filter: white;
 }
 
-.box9{
-    width: 400px;
-    height: 400px;
+.box9 {
+    width: 500px;
+    height: 500px;
     backdrop-filter: blur(50px);
     margin-top: auto;
     margin-bottom: auto;
@@ -392,26 +389,271 @@ html::-webkit-scrollbar-thumb{
     text-align: center;
     border: 2px solid #310000;
     border-radius: 5px;
+    opacity: 100%;
 }
 
-.box9 h2{
+.box9:hover {
+    transform: scaleX(1.1) scaleY(1.1);
+    transition: 1.2s linear;
+    border: 3px solid #fff;
+    cursor: pointer;
+}
+
+.box9 h2 {
     color: #ffffff;
     font-weight: 550;
     font-size: 25px;
     margin-top: 15px;
 }
 
-.box9 h1{
-    color:rgb(102, 0, 0);
+.box9 h1 {
+    color: rgb(102, 0, 0);
     font-weight: 550;
     font-size: 27px;
-    margin-top:10px;
+    margin-top: 10px;
 }
 
-
-.box9 img{
+.box9 img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    margin-top:10px;
+    margin-top: 10px;
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 1200px) {
+    .nav a {
+        font-size: 20px;
+        height: 35px;
+    }
+
+    .box {
+        height: 500px;
+    }
+
+    .box .box1, .box .box2, .box .box3 {
+        width: 250px;
+        height: 250px;
+    }
+
+    .box4, .main-box .box6, .box7, .box8, .box9 {
+        width: 90%;
+        height: auto;
+    }
+
+    .box4 input {
+        width: 100%;
+    }
+
+    .box7 input, .box7 .sub {
+        width: 100%;
+    }
+
+    .box8 .fld1, .box8 .fld2 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .nav a {
+        margin-left: 0;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .box {
+        height: 400px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .box .box1, .box .box2, .box .box3 {
+        width: 200px;
+        height: 200px;
+    }
+
+    .box6 {
+        width: 80%;
+        height: auto;
+    }
+
+    .box4, .box7, .box8, .box9 {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .box4 input {
+        width: 100%;
+    }
+
+    .box7 input, .box7 .sub {
+        width: 100%;
+    }
+
+    .box8 .fld1, .box8 .fld2 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav a {
+        font-size: 16px;
+    }
+
+    .box {
+        height: 300px;
+    }
+
+    .box .box1, .box .box2, .box .box3 {
+        width: 150px;
+        height: 150px;
+    }
+
+    .box6 {
+        width: 100%;
+        height: auto;
+    }
+
+    .box4, .box7, .box8, .box9 {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .box4 input {
+        width: 100%;
+    }
+
+    .box7 input, .box7 .sub {
+        width: 100%;
+    }
+
+    .box8 .fld1, .box8 .fld2 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav {
+        padding: 5px;
+    }
+
+    .nav a {
+        font-size: 14px;
+        height: 30px;
+    }
+
+    .box {
+        height: 250px;
+    }
+
+    .box .box1, .box .box2, .box .box3 {
+        width: 120px;
+        height: 120px;
+    }
+
+    .box6 {
+        width: 100%;
+        height: auto;
+    }
+
+    .box4, .box7, .box8, .box9 {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .box4 input {
+        width: 100%;
+    }
+
+    .box7 input, .box7 .sub {
+        width: 100%;
+    }
+
+    .box8 .fld1, .box8 .fld2 {
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box1, .box2 {
+        max-width: 90%;
+    }
+
+    .box a {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .box h2 {
+        font-size: 18px;
+    }
+
+    .box a {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .box {
+        flex-direction: column;
+        align-items: center; /* Center align items for better view on smaller screens */
+    }
+
+    .box1, .box2 {
+        width: 80%;
+        height: auto; /* Adjust height to fit content */
+        margin: 10px 0;
+    }
+
+    .box img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .box1 h2, .box2 h2 {
+        font-size: 18px; /* Adjust font size for better readability */
+    }
+
+    .box1 a, .box2 a {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
+/* Media Queries for very small screens (phones) */
+@media (max-width: 480px) {
+    .box1, .box2 {
+        width: 95%;
+        margin: 8px auto;
+    }
+    .main-box, .we-box ,.showwe-box, .box{
+        height:500px; 
+    }
+
+    .box img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .box1 h2, .box2 h2 {
+        font-size: 16px; /* Further adjust font size for very small screens */
+    }
+
+    .box1 a, .box2 a {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
 }

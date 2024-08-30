@@ -14,8 +14,6 @@ from sklearn.tree import DecisionTreeClassifier
 app = Flask(__name__)
 app.secret_key=os.urandom(24)
 
-openai.my_api_key = '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'
-messages = [ {"role": "system", "content": "You are a intelligent assistant."} ]
 
 rainfall = ''
 temperature = ''
@@ -164,6 +162,7 @@ def get_whether():
     params = {
         'q': city,
         'appid': api_key,
+        'units': 'metric'
     }
 
     response = requests.get(base_url, params=params)
@@ -176,22 +175,5 @@ def get_whether():
     sea_level = data['main']['sea_level']
 
     return render_template('show_whether.html',desc=desc,temp=temp,name=name,humidity=humidity,sea_level=sea_level)
-
-@app.route('/ask_querry')
-def ask_querry():
-    return render_template('ask_querry.html')
-
-@app.route('/ans_querry',methods=['POST'])
-def ans_querry():
-    command = request.form.get('querry')
-    messages.append( 
-            {"role": "user", "content": command}, 
-        ) 
-    chat = openai.ChatCompletion.create( 
-            model="gpt-3.5-turbo", messages=messages 
-        )
-    reply = chat.choices[0].message.content 
-
-    return render_template('ask_querry.html',ans=reply,ques=command)
 
 app.run(debug=True)

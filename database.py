@@ -10,6 +10,7 @@ cmd2 = """insert into user(email,name, password)values('piyushprakash@gmail.com'
 #cursor.execute(cmd2)
 cmd3 = "select * from user"
 ans = cursor.execute(cmd3)
+connection.commit()
 for i in ans:
     print(i)
 

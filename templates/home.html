@@ -3,6 +3,8 @@
     <head>
         <title>Farm agent</title>
         <link rel="stylesheet" href="{{ url_for('static' ,filename='css/style.css')}}">
+        <link rel="icon" href="{{ url_for('static', filename='images/ai.ico') }}" type="image/x-icon">
+
     </head>
     <body>
         <div class="crop-box">
@@ -19,6 +21,17 @@
             <input class="lbl-sub" type="submit" value="predict">
         </form>
         </div>
+
+        {% if temperature and data %}
+        <div class="box6">
+            <img src="{{ url_for('static',filename='images/ai2.jpg')}}">
+            <p class="p-25">Temperature - {{ temperature }}</p>
+            <p class="humidity">humidity - {{ humidity }}</p>
+            <p class="ph">Ph - {{ ph }}</p>
+            <p class="rainfall">Rainfall - {{ rainfall }}</p>
+            <h2>Predicted crop is <span class="cap">{{ data }}</span></h2>
+        </div>
+        {% endif %}
         </div>
 
         
